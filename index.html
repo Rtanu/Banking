@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bank</title>
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#section--0">
+          <img
+            src="img/logo.png"
+            alt="Banking logo"
+            class="nav__logo"
+            id="logo"
+            designer="Jonas"
+            data-version-number="3.0"
+        /></a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link nav__fade" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__fade" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__fade" href="#section--3">Testimonials</a>
+          </li>
+          <ul class="account">
+            <li class="nav__item">
+              <a
+                class="nav__link nav__fade nav__link--btn btn--show-modal"
+                href="#"
+                >Open account</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link--login nav__fade" href="Banking/index.html">
+                Log in</a
+              >
+            </li>
+          </ul>
+          <span class="nav__item dropdown">
+            <span class="nav__link nav__fade settings-gear">⚙️</span>
+            <button
+              class="dropdown-content"
+              id="theme-btn"
+              onclick="switchTheme()"
+            >
+              Theme: 🌙
+            </button>
+          </span>
+        </ul>
+      </nav>
+
+      <div class="header__title" id="section--0">
+        <h1>
+          When
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          meets<br />
+          <span class="highlight">minimalist</span>
+        </h1>
+        <h4>
+          A simpler banking experience for a simpler life, with simply
+          non-existent security.
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">Modern bank with basic features.</h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            We have two online pages in total (this one and the 'Log in' one),
+            so you can be sure it is 100% digital.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch your money grow</h5>
+          <p>
+            80 days around the world, we’ll find a pot of gold just sitting
+            where the rainbow’s ending. Time — we’ll fight against the time, and
+            we’ll fly on the white wings of the wind. 80 days around the world,
+            no we won’t say a word before the ship is really back. Round, round,
+            all around the world. Round, all around the world. Round, all around
+            the world. Round, all around the world.
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Free debit card included</h5>
+          <p>
+            Disclaimer: In the beginning ther will NOT be money in your account,
+            if you see some call our support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">Things are simple with us.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Tranfser money to anyone (with this bank's account), instantly
+            without any fees.
+          </h5>
+          <p>
+            You may find us some new users so you can enjoy this feature
+            together.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Buy a home or make your dreams come true, with instant loans.
+          </h5>
+          <p>
+            Technically thanks to our loan system you can become a
+            multimillionaire in very little amount of time.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>You can but our financial advisors don't recommend this.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Millions of people use banks, so you might just as well use ours.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              My first steps to financial independence
+            </h5>
+            <blockquote class="testimonial__text">
+              There’s a voice that keeps on calling me. Down the road, that’s
+              where I’ll always be. Every stop I make, I make a new friend.
+              Can’t stay for long, just turn around and I’m gone again. Maybe
+              tomorrow, I’ll want to settle down, Until tomorrow, I’ll just keep
+              moving on.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Almost Lion King</h6>
+              <p class="testimonial__location">Pride Lands of Africa</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              I had to receive money in some way, right?
+            </h5>
+            <blockquote class="testimonial__text">
+              Thundercats are on the move, Thundercats are loose. Feel the
+              magic, hear the roar, Thundercats are loose. Thunder, thunder,
+              thunder, Thundercats! Thunder, thunder, thunder, Thundercats!
+              Thunder, thunder, thunder, Thundercats! Thunder, thunder, thunder,
+              Thundercats! Thundercats!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Edgy Boy</h6>
+              <p class="testimonial__location">Sky, Heavens</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">The delete button works</h5>
+            <blockquote class="testimonial__text">
+              Ulysses, Ulysses — Soaring through all the galaxies. In search of
+              Earth, flying in to the night. Ulysses, Ulysses — Fighting evil
+              and tyranny, with all his power, and with all of his might.
+              Ulysses — no-one else can do the things you do. Ulysses — like a
+              bolt of thunder from the blue. Ulysses — always fighting all the
+              evil forces bringing peace and justice to all.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Explosive Guy</h6>
+              <p class="testimonial__location">Somewhere High</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Join us if you can <br />
+          P.S. you can't :(
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a class="footer__link" target="_blank">Jonas Schmedtmann</a> (most of
+        the design) and
+        <a class="footer__link" target="_blank">Mikayel Bejanyan</a>. Used for
+        portfolio.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
